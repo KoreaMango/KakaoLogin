@@ -16,6 +16,11 @@
 		04A81296292FAF5500C12645 /* KakaoLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A81295292FAF5500C12645 /* KakaoLoginTests.swift */; };
 		04A812A0292FAF5500C12645 /* KakaoLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8129F292FAF5500C12645 /* KakaoLoginUITests.swift */; };
 		04A812A2292FAF5500C12645 /* KakaoLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A812A1292FAF5500C12645 /* KakaoLoginUITestsLaunchTests.swift */; };
+		04A812B0292FD12300C12645 /* RxKakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812AF292FD12300C12645 /* RxKakaoSDK */; };
+		04A812B3292FD14D00C12645 /* RxKakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812B2292FD14D00C12645 /* RxKakaoSDK */; };
+		04A812B5292FD15100C12645 /* RxKakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812B4292FD15100C12645 /* RxKakaoSDK */; };
+		04A812B8292FDF2500C12645 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812B7292FDF2500C12645 /* SnapKit */; };
+		04A812BB292FE13300C12645 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812BA292FE13300C12645 /* RxGesture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A812B0292FD12300C12645 /* RxKakaoSDK in Frameworks */,
+				04A812BB292FE13300C12645 /* RxGesture in Frameworks */,
+				04A812B8292FDF2500C12645 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A812B3292FD14D00C12645 /* RxKakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A812B5292FD15100C12645 /* RxKakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				04A81294292FAF5500C12645 /* KakaoLoginTests */,
 				04A8129E292FAF5500C12645 /* KakaoLoginUITests */,
 				04A8127C292FAF5300C12645 /* Products */,
+				04A812B1292FD14D00C12645 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +138,13 @@
 			path = KakaoLoginUITests;
 			sourceTree = "<group>";
 		};
+		04A812B1292FD14D00C12645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +161,11 @@
 			dependencies = (
 			);
 			name = KakaoLogin;
+			packageProductDependencies = (
+				04A812AF292FD12300C12645 /* RxKakaoSDK */,
+				04A812B7292FDF2500C12645 /* SnapKit */,
+				04A812BA292FE13300C12645 /* RxGesture */,
+			);
 			productName = KakaoLogin;
 			productReference = 04A8127B292FAF5300C12645 /* KakaoLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +184,9 @@
 				04A81293292FAF5500C12645 /* PBXTargetDependency */,
 			);
 			name = KakaoLoginTests;
+			packageProductDependencies = (
+				04A812B2292FD14D00C12645 /* RxKakaoSDK */,
+			);
 			productName = KakaoLoginTests;
 			productReference = 04A81291292FAF5500C12645 /* KakaoLoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -179,6 +205,9 @@
 				04A8129D292FAF5500C12645 /* PBXTargetDependency */,
 			);
 			name = KakaoLoginUITests;
+			packageProductDependencies = (
+				04A812B4292FD15100C12645 /* RxKakaoSDK */,
+			);
 			productName = KakaoLoginUITests;
 			productReference = 04A8129B292FAF5500C12645 /* KakaoLoginUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -215,6 +244,11 @@
 				Base,
 			);
 			mainGroup = 04A81272292FAF5300C12645;
+			packageReferences = (
+				04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */,
+				04A812B6292FDF2500C12645 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				04A812B9292FE13300C12645 /* XCRemoteSwiftPackageReference "RxGesture" */,
+			);
 			productRefGroup = 04A8127C292FAF5300C12645 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +636,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk-rx";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		04A812B6292FDF2500C12645 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		04A812B9292FE13300C12645 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A812AF292FD12300C12645 /* RxKakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDK;
+		};
+		04A812B2292FD14D00C12645 /* RxKakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDK;
+		};
+		04A812B4292FD15100C12645 /* RxKakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */;
+			productName = RxKakaoSDK;
+		};
+		04A812B7292FDF2500C12645 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812B6292FDF2500C12645 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		04A812BA292FE13300C12645 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812B9292FE13300C12645 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04A81273292FAF5300C12645 /* Project object */;
 }
