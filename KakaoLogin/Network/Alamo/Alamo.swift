@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 
 struct NetworkAlamo {
-    
     func getData(url : String) {
-        let urlRequest : URLRequest = URLRequest(url: url.asURL(), method: .get)
-        
+        guard let url = try? url.asURL() else {return}
+        guard let urlRequest: URLRequest = try? URLRequest(url: url, method: .get) else {return}
+    
         AF.request(urlRequest)
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: Model) { response in
-                ...
+            .responseDecodable(of: [ResponseData].self) { response in
+                print(response)
             }
     }
 }
