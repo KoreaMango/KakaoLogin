@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         view.backgroundColor = .brown
         
         setView()
@@ -47,9 +46,8 @@ class ViewController: UIViewController {
         if (UserApi.isKakaoTalkLoginAvailable()) {
             UserApi.shared.rx.loginWithKakaoTalk()
                 .subscribe (onNext: {(oauthToken) in
-                    print("loginWithKakaoTalk() success.")
-                    
-                    _ = oauthToken
+                    print("loginWithKakaoTalk() success. Set Kakao")
+                    AppDelegate.oauthToken = oauthToken
                 },onError: { error in
                     print(error)
                 })
@@ -62,17 +60,19 @@ class ViewController: UIViewController {
             if let error = error {
                 print(error)
             } else {
-                print("login with kakaoAccount() success")
-                
-                _ = oauthToken
+                print("login with kakaoAccount() success. Set Web")
+                AppDelegate.oauthToken = oauthToken
+                self.presentVC()
             }
         }
     }
     
+    func presentVC() {
+        self.navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
+    
     func setView() {
-        
         self.view.addSubview(button)
-        
     }
     
     func setConstraint() {
