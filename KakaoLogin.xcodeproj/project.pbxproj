@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A6487A2931E02F006B7401 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A648792931E02F006B7401 /* ResponseData.swift */; };
 		04A8127F292FAF5300C12645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8127E292FAF5300C12645 /* AppDelegate.swift */; };
 		04A81281292FAF5300C12645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A81280292FAF5300C12645 /* SceneDelegate.swift */; };
 		04A81283292FAF5300C12645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A81282292FAF5300C12645 /* ViewController.swift */; };
-		04A81286292FAF5300C12645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A81284292FAF5300C12645 /* Main.storyboard */; };
 		04A81288292FAF5500C12645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A81287292FAF5500C12645 /* Assets.xcassets */; };
 		04A8128B292FAF5500C12645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A81289292FAF5500C12645 /* LaunchScreen.storyboard */; };
 		04A81296292FAF5500C12645 /* KakaoLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A81295292FAF5500C12645 /* KakaoLoginTests.swift */; };
@@ -21,6 +21,14 @@
 		04A812B5292FD15100C12645 /* RxKakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812B4292FD15100C12645 /* RxKakaoSDK */; };
 		04A812B8292FDF2500C12645 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812B7292FDF2500C12645 /* SnapKit */; };
 		04A812BB292FE13300C12645 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812BA292FE13300C12645 /* RxGesture */; };
+		04A812BE2930641C00C12645 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812BD2930641C00C12645 /* Moya */; };
+		04A812C02930641C00C12645 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812BF2930641C00C12645 /* ReactiveMoya */; };
+		04A812C22930641C00C12645 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 04A812C12930641C00C12645 /* RxMoya */; };
+		04A812C52930680300C12645 /* NetworkAlamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A812C42930680300C12645 /* NetworkAlamo.swift */; };
+		04A812C72930680A00C12645 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A812C62930680A00C12645 /* TargetType.swift */; };
+		04A812CB293070D400C12645 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A812CA293070D400C12645 /* SecondViewController.swift */; };
+		04AADDCD2939F79F00156500 /* MyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AADDCC2939F79F00156500 /* MyAPI.swift */; };
+		04C4E6852935EB1900BDE2F2 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4E6842935EB1900BDE2F2 /* Base.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A648792931E02F006B7401 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		04A8127B292FAF5300C12645 /* KakaoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A8127E292FAF5300C12645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A81280292FAF5300C12645 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04A81282292FAF5300C12645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04A81285292FAF5300C12645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A81287292FAF5500C12645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A8128A292FAF5500C12645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A8128C292FAF5500C12645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +62,12 @@
 		04A8129B292FAF5500C12645 /* KakaoLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A8129F292FAF5500C12645 /* KakaoLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginUITests.swift; sourceTree = "<group>"; };
 		04A812A1292FAF5500C12645 /* KakaoLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04A812C42930680300C12645 /* NetworkAlamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlamo.swift; sourceTree = "<group>"; };
+		04A812C62930680A00C12645 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		04A812CA293070D400C12645 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		04AADDCC2939F79F00156500 /* MyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPI.swift; sourceTree = "<group>"; };
+		04C20574293773FE00734304 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		04C4E6842935EB1900BDE2F2 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A812C22930641C00C12645 /* RxMoya in Frameworks */,
 				04A812B0292FD12300C12645 /* RxKakaoSDK in Frameworks */,
 				04A812BB292FE13300C12645 /* RxGesture in Frameworks */,
+				04A812BE2930641C00C12645 /* Moya in Frameworks */,
+				04A812C02930641C00C12645 /* ReactiveMoya in Frameworks */,
 				04A812B8292FDF2500C12645 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,9 +103,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A648752931DE50006B7401 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				04A812C62930680A00C12645 /* TargetType.swift */,
+				04AADDCC2939F79F00156500 /* MyAPI.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		04A648762931DE56006B7401 /* Alamo */ = {
+			isa = PBXGroup;
+			children = (
+				04A812C42930680300C12645 /* NetworkAlamo.swift */,
+			);
+			path = Alamo;
+			sourceTree = "<group>";
+		};
+		04A648782931E01E006B7401 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				04A648792931E02F006B7401 /* ResponseData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		04A81272292FAF5300C12645 = {
 			isa = PBXGroup;
 			children = (
+				04C20574293773FE00734304 /* README.md */,
 				04A8127D292FAF5300C12645 /* KakaoLogin */,
 				04A81294292FAF5500C12645 /* KakaoLoginTests */,
 				04A8129E292FAF5500C12645 /* KakaoLoginUITests */,
@@ -110,10 +153,12 @@
 		04A8127D292FAF5300C12645 /* KakaoLogin */ = {
 			isa = PBXGroup;
 			children = (
+				04A648782931E01E006B7401 /* Entities */,
+				04A812C32930644000C12645 /* Network */,
 				04A8127E292FAF5300C12645 /* AppDelegate.swift */,
 				04A81280292FAF5300C12645 /* SceneDelegate.swift */,
 				04A81282292FAF5300C12645 /* ViewController.swift */,
-				04A81284292FAF5300C12645 /* Main.storyboard */,
+				04A812CA293070D400C12645 /* SecondViewController.swift */,
 				04A81287292FAF5500C12645 /* Assets.xcassets */,
 				04A81289292FAF5500C12645 /* LaunchScreen.storyboard */,
 				04A8128C292FAF5500C12645 /* Info.plist */,
@@ -145,6 +190,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		04A812C32930644000C12645 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04C4E6842935EB1900BDE2F2 /* Base.swift */,
+				04A648762931DE56006B7401 /* Alamo */,
+				04A648752931DE50006B7401 /* Moya */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +220,9 @@
 				04A812AF292FD12300C12645 /* RxKakaoSDK */,
 				04A812B7292FDF2500C12645 /* SnapKit */,
 				04A812BA292FE13300C12645 /* RxGesture */,
+				04A812BD2930641C00C12645 /* Moya */,
+				04A812BF2930641C00C12645 /* ReactiveMoya */,
+				04A812C12930641C00C12645 /* RxMoya */,
 			);
 			productName = KakaoLogin;
 			productReference = 04A8127B292FAF5300C12645 /* KakaoLogin.app */;
@@ -248,6 +306,7 @@
 				04A812AE292FD12300C12645 /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */,
 				04A812B6292FDF2500C12645 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				04A812B9292FE13300C12645 /* XCRemoteSwiftPackageReference "RxGesture" */,
+				04A812BC2930641C00C12645 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 04A8127C292FAF5300C12645 /* Products */;
 			projectDirPath = "";
@@ -267,7 +326,6 @@
 			files = (
 				04A8128B292FAF5500C12645 /* LaunchScreen.storyboard in Resources */,
 				04A81288292FAF5500C12645 /* Assets.xcassets in Resources */,
-				04A81286292FAF5300C12645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C4E6852935EB1900BDE2F2 /* Base.swift in Sources */,
+				04A812CB293070D400C12645 /* SecondViewController.swift in Sources */,
+				04AADDCD2939F79F00156500 /* MyAPI.swift in Sources */,
+				04A6487A2931E02F006B7401 /* ResponseData.swift in Sources */,
+				04A812C72930680A00C12645 /* TargetType.swift in Sources */,
+				04A812C52930680300C12645 /* NetworkAlamo.swift in Sources */,
 				04A81283292FAF5300C12645 /* ViewController.swift in Sources */,
 				04A8127F292FAF5300C12645 /* AppDelegate.swift in Sources */,
 				04A81281292FAF5300C12645 /* SceneDelegate.swift in Sources */,
@@ -331,14 +395,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04A81284292FAF5300C12645 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04A81285292FAF5300C12645 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04A81289292FAF5500C12645 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -476,7 +532,7 @@
 				INFOPLIST_FILE = KakaoLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +560,7 @@
 				INFOPLIST_FILE = KakaoLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,6 +718,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		04A812BC2930641C00C12645 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -689,6 +753,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04A812B9292FE13300C12645 /* XCRemoteSwiftPackageReference "RxGesture" */;
 			productName = RxGesture;
+		};
+		04A812BD2930641C00C12645 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812BC2930641C00C12645 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		04A812BF2930641C00C12645 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812BC2930641C00C12645 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		04A812C12930641C00C12645 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A812BC2930641C00C12645 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

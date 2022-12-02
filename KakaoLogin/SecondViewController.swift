@@ -37,6 +37,7 @@ class SecondViewController: UIViewController {
         
         setView()
         setConstraint()
+        MyAPI().request()
     }
     
     func setView() {

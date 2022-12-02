@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Base {
-    static var url = "https://picsum.photos/v2/list"
+enum Base {
+    static var url = "https://picsum.photos/v2"
+    //  /list
 }
