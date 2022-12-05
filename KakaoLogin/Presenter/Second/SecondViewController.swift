@@ -10,6 +10,9 @@ import RxCocoa
 import SnapKit
 
 class SecondViewController: UIViewController {
+    
+    var viewModel = ViewModel()
+    
     lazy var lbKakao: UILabel = {
         let label = UILabel()
         var txt = "kakao: "
@@ -37,7 +40,13 @@ class SecondViewController: UIViewController {
         
         setView()
         setConstraint()
-        MyAPI().request()
+        bind()
+    }
+    
+    func bind() {
+        //TODO: 연결
+        
+            
     }
     
     func setView() {

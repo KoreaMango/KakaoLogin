@@ -9,8 +9,6 @@ import Foundation
 
 import Moya
 
-// TargetType정의: network템플릿 작성
-
 public enum MyTarget {
     case lists
 }
@@ -18,7 +16,7 @@ public enum MyTarget {
 extension MyTarget: TargetType {
     
     public var baseURL: URL {
-        guard let url = URL(string: Base.url) else {
+        guard let url = Base.url else {
             fatalError("fatal error - invalid url")
         }
         return url

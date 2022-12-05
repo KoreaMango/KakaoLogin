@@ -8,6 +8,6 @@
 import Foundation
 
 enum Base {
-    static var url = "https://picsum.photos/v2"
+    static var url: URL? = URL(string: "https://picsum.photos/v2")!
     //  /list
 }
