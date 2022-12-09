@@ -2,6 +2,3 @@
 - [x] 1. kakao 로그인
 - [x] 2. Alamofire
 - [x] 3. Moya
-- [ ] 4. Coordinator
-- [ ] 5. MVVM
-- [ ] 6. Clean Architecture
